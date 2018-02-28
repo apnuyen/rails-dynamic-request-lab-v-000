@@ -3,7 +3,7 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-  def show 
+  def show
     @full_name = Student.find(params[:id]).to_s
-  end 
+  end
 end
